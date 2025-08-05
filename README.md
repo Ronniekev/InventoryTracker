@@ -1,6 +1,6 @@
-### InventoryTracker Microservice
+# InventoryTracker Microservice
 
-# About
+### About
 
 This service receives 2 lists of ingredients from a Client
 
@@ -12,7 +12,7 @@ Returns 2 lists
 - List 2 represents the amount of each ingredient required to restock
 
 
-# Communication Contract
+### Communication Contract
 
 This service runs using the zeroMQ req/rep model. After downloading files from github run server.py file to listen for requests on port 5555. 
 
@@ -50,7 +50,7 @@ request_data = [
 
 ```
 
-# Send Request
+### Send Request
 
 ```bash
 
@@ -59,7 +59,7 @@ socket.send_string(data)
 
 ```
 
-## Receive Data 
+### Receive Data 
 
 Responses will be received in JSON format and decoded by thr recv_string() function before presenting to users..
 
@@ -70,7 +70,7 @@ print(message)
 
 ```
 
-# Succesful Output
+### Succesful Output
 
 ```bash
 
@@ -82,7 +82,7 @@ print(message)
 
 ![alt text](<uml diagram.jpg>)
 
-# Author
+### Author
 
 Ronniekev
 
